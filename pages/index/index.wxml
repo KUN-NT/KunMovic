@@ -1,0 +1,15 @@
+<view class="main">
+    <!--公共头部-->
+    <MyTitle></MyTitle>
+    <!--首页导航-->
+    <view class="nav_wrap">
+        <!--自带滚动区域的组件-->
+        <scroll-view class="nav" scroll-x="{{true}}">
+            <view bindtap="activeNav" data-index="{{index}}"
+            class="nav_item {{index===currentIndexMav?'active':''}}" 
+            wx:for="{{navList}}" wx:key="{{index}}">
+                {{item.text}}
+            </view>
+        </scroll-view>
+    </view>
+</view>

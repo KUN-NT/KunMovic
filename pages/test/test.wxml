@@ -1,0 +1,11 @@
+<view wx:if="{{num>30}}">
+  <h1>Hello World</h1>
+</view>
+
+<block wx:for="{{arr}}" wx:key="index">
+  {{index+1}}:{{item}}
+</block>
+
+<view class="test">
+
+</view>
